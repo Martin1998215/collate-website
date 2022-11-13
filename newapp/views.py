@@ -18,14 +18,14 @@ def home(request):
 
             message = form.save(commit=False)
             message.save()
-            return redirect('home')
+            return redirect('index')
 
     else:
         form = MessageForm()
 
     context = {'form': form}
 
-    return render(request, 'home.html', context)
+    return render(request, 'index.html', context)
 
 
 def customers(request):
