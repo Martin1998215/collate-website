@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Collate AI</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href ="{% static 'home.css' %}" > 
+    
+</head>
+<body>
+    <div class="main">
+
+        <ul class="navbar">
+            <div class="navbar-left">
+                <li><h3>COLLATE AI</h3></li>
+                </div>
+                <div class="navbar-right">
+                <li><a href="{% url 'home' %}">HOME</a></li>
+                <li><a href="{% url 'updates' %}">UPDATES</a></li>
+                <li><a href="{% url 'customers' %}">CUSTOMERS</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
+            </div>
+            </ul>
+
+    <div class="upper-main">
+
+    <div class="header">
+    <h3>Welcome to our official website.</h3>
+    <div class="seperation-line"></div>
+    <div class="cover-intro">
+    <h4>A Data driven AI Startup for Business Management and Decision Making.</h4>
+    <div class="intro">Collate AI is an AI Startup, That uses AI for Business 
+        Management and Decision Making From Sales Data To Generate Financial Reports, 
+        co-founded by <b>Martin Sichibeya</b> and <b>Allan Mapumba</b>, An expert Accountant with 
+        over 10 years of experience.</div>
+    <div class="intro-more"> <a href="{% url 'about' %}">Read More</a></div>
+    <div class="contact">
+    <h5><i>Cell: 0976035766</i></h5>
+    <h5><i>Email: collateai@gmail.com</i></h5>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="lower-main">
+
+        <div class="lower-main-cover">
+            <div class="sub-header">
+            <h4>AI For Business Analysis And Management</h4>
+            </div>
+            <div class="seperation-line"></div>
+            <h3 class="service-header">Profile</h3>
+
+            <div class="img-cover">
+                {% load static %}
+                <img src="{% static 'media/aboutcover.jpeg' %}"
+                 class="img-home" alt="Home Cover Photo">
+            </div>
+            <div class="seperation-line"></div>
+            <h3 class="service-header">Our Services</h3>
+            <div class="main-cover">
+
+            <div class="main-list">
+            <h4>Comparables</h4>
+            <div class="main-list-line"></div>
+            <ul class="lower-main-list">
+            <li><i>Weekly Sales Vs Purchases Performances</i></li>
+            <li><i>Monthly Sales Vs Purchases Performances</i></li>
+            <li><i>Quarterly Sales Vs Purchases Performances</i></li>
+            <li><i>Yearly Sales Vs Purchases Performances</i></li>
+            </ul>
+            </div>
+
+            <div class="main-list">
+            <h4>Model Predictions</h4>
+            <div class="main-list-line"></div>
+            <ul class="lower-main-list">
+            <li><i>For Sales Demands</i></li>
+            <li><i>For Inventory Management</i></li>
+            <li><i>For Profit Optimization</i></li>
+            </ul>
+            </div>
+
+            <div class="main-list">
+                <h4>Inventory Management</h4>
+                <div class="main-list-line"></div>
+                <p>Supply chain inventory management (SCIM) is a complex sequential 
+                    decision-making problem consisting of determining the optimal 
+                    quantity of products to produce at the factory and to ship to different
+                     distribution warehouses over a given time horizon
+                </p>
+            </div>
+
+            <div class="main-list">
+                <h4>Data Visualization</h4>
+                <div class="main-list-line"></div>
+                <ul class="lower-main-list">
+                <li><i>Line Charts For Sales Demand Forecasting</i></li>
+                <li><i>Bar Charts For Sales Demand.</i></li>
+                <li><i>Generate Reports On top of Line Charts.</i></li>
+                </ul>
+                </div>
+
+            </div>
+            <div class="seperation-line"></div>
+
+            <h3 class="service-header">Highlights</h3>
+            <div class="main-container">
+
+                <div class="main-pic-cover">
+                    {% load static %}
+                    <img src="{% static 'media/updated-sept-2022.png' %}"
+                     class="img-highlight" alt="Hightlight Cover Photo">
+                     <h5>Line Chart For Monthly Sales</h5>
+                </div>
+                <div class="main-pic-cover">
+                    {% load static %}
+                    <img src="{% static 'media/updated-sept-2022-barchart.png' %}"
+                     class="img-highlight" alt="Hightlight Cover Photo">
+                     <h5>Bar Chart For Monthly Sales</h5>
+                </div>
+                <div class="main-pic-cover">
+                    {% load static %}
+                    <img src="{% static 'media/updated-sept-2022-report.png' %}"
+                     class="img-highlight" alt="Hightlight Cover Photo">
+                     <h5>Report Generation For Monthly Sales</h5>
+                </div>
+                <div class="main-pic-cover">
+                    {% load static %}
+                    <img src="{% static 'media/updated-sept-vs-aug-2022-compare.png' %}"
+                     class="img-highlight" alt="Hightlight Cover Photo">
+                     <h5>Comparables For Two Monthly Sales</h5>
+                </div>
+            </div>
+            <div class="seperation-line"></div>
+
+            <div class="message-section">            
+<h3>Message Us</h3>
+    <form action="", method="post", class="home-form">
+        {% csrf_token %}
+
+        {{form}}
+
+    <input class="submit-btn" type="submit">    
+   
+</form>
+
+</div>
+
+            <div class="footer">
+                We build <b>Financial Reports</b> using AI models with our expert accountants.<br><br>
+                 <b>Contact us</b> on 0976035766 or <b>Email us</b> on collateai@gmail.com to know more about us.<br><br>
+                We are Located In Livingstone Town.<br><br>
+                <b>&copy;2022</b> 
+                
+            </div>
+
+
+<!-- 
+            <div class="footer">
+                <div class="sub-footer">
+                <h4>Our Services</h4>
+                </div>
+                <li><i>Data driven for Retail and wholesale data</i></li>
+                <li><i>Data Visualization on weekly, monthly, quarterly and yearly basis.</i></li>
+                <li><i>Comparables for weekly,monthly,quarterly and yearly sales.</i></li>
+                <li><i>Model Predictions for sales and purchases demands</i></li>
+                <li><i>Data driven for Inventory Management</i></li>
+               
+                <div class="bottom-footer">
+                    <h5>&copy;2022</h5>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    </div>
+</body>
+</html>

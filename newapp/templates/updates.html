@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Updates | Collate AI</title>
+    {% load static %}
+    <link rel="stylesheet" href ="{% static 'updates.css' %}">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <ul class="navbar">
+            <div class="navbar-left">
+                <li><h3>COLLATE AI</h3></li>
+                </div>
+                <div class="navbar-right">
+                <li><a href="{% url 'home' %}">HOME</a></li>
+                <li><a href="{% url 'updates' %}">UPDATES</a></li>
+                <li><a href="{% url 'customers' %}">CUSTOMERS</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
+            </div>
+        </ul>
+
+        <div class="header">
+            <h4>A Data driven AI Startup for Business Management and Decision Making.</h4>
+        </div>  
+
+        <h3 class="h2">Welcome To Our Updates Section</h3> 
+        
+        <ul class="main">
+            {% for item in update%}  
+            <div class="inner-main">
+                <li id="title"><h3>{{ item.title}}</h3></li>
+                <li id="text"><b>{{ item.text}}</li>
+                <div class="lower-main"> 
+                <li id="date">{{ item.date_posted}}</li>
+                <li id="post">{{ item.posted_by}}</li>
+                </div>
+                </div>
+            {% endfor %}    
+        
+        </ul>
+        
+        </div>
+    
+</body>
+</html>

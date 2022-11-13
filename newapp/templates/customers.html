@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers | Collate AI</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'customers.css' %}">
+    <style>
+     
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <ul class="navbar">
+            <div class="navbar-left">
+                <li><h3>COLLATE AI</h3></li>
+                </div>
+                <div class="navbar-right">
+                <li><a href="{% url 'home' %}">HOME</a></li>
+                <li><a href="{% url 'updates' %}">UPDATES</a></li>
+                <li><a href="{% url 'customers' %}">CUSTOMERS</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
+            </div>
+            </ul>
+    <div class="header">
+        <h4>A Data driven AI Startup for Business Management and Decision Making.</h4>
+    </div>    
+    <h2 class="h2">Our Customers</h2>  
+
+<ul class="main">
+    {% for item in business %}  
+        <div class="main-ul"> 
+        <li id="business-type">Business Name: {{ item.name}}</li>
+        <li id="email"><b>Business Type:</b> {{ item.business_type}}</li>
+        <li id="location"><b>Location:</b> {{ item.location}}</li>
+        </div>
+    {% endfor %}   
+
+</ul>
+
+<div class="footer">
+    We build <b>Financial Reports</b> using AI models with our expert accountants.<br><br>
+     <b>Contact us</b> on 0976035766 or <b>Email us</b> on collateai@gmail.com to know more about us.<br><br>
+    We are Located In Livingstone Town.<br><br>
+    <b>&copy;2022</b> 
+    
+</div>
+
+</div>
+</body>
+</html>

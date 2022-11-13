@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Collate AI</title>
+    {% load static %}
+    <link rel="stylesheet" href = "{% static 'about.css' %}">
+   
+</head>
+<body>
+<div class="main">
+    <ul class="navbar">
+        <div class="navbar-left">
+            <li><h3>COLLATE AI</h3></li>
+            </div>
+            <div class="navbar-right">
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'updates' %}">UPDATES</a></li>
+            <li><a href="{% url 'customers' %}">CUSTOMERS</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+        </div>
+        </ul>
+<div class="cover">
+<diV class="container"> 
+<h5>A Data driven AI Startup for Business Management and Decision Making.</h5>
+</div>
+<div class="main-body"><b>Collate AI</b> is an AI Startup, That uses AI for Business Management and
+ Decision Making In Retail To Generate <b>Financial Reports</b>, co-founded by <b>Martin Sichibeya</b> 
+and <b>Allan Mapumba</b>, An expert Accountant with over 10 years of experience.
+</div>
+<div class="main-body">
+    Throughout the history of Business, humans have always wished to know what the sales performance for their
+    business will look like. Humans have always wished to <b>predict</b> tomorrow so that they can plan about the quantity of 
+    products to purchase to <b>reduce Inventories</b> at their stores. In the new paradigm, <b>AI models</b> 
+    will help <b>predict our future sales</b> to help meet <b>purchase Demands</b>, <b>Reduce Inventories</b>
+      and <b>Optimize Profit</b>.
+</div>
+
+<div class="main-body">
+    Advancements In <b>Artificial Intelligence</b> or AI promise to fundamentally help us predict 
+     the future sales for Retail and wholesale businesses on weekly basis, Monthly basis, Quarterly basis and Yearly basis to help
+    generate powerful <b>financial reports</b> with the help of our expert accountants. This will allow human expert 
+    accountants to collaborate with AI models to genearate the reports for retail and wholesale businesses. 
+    Over time, these AI model capabilities will revolutionize what it means to generate <b>Financial 
+        Business Reports.</b><br><a href="{% url 'customers' %}">Our Customers</a>
+</div>
+
+<hr>
+
+<h3>Message Us</h3>
+<div class="contact-main">
+    <form action="", method="post", class="about-form">
+        {% csrf_token %}
+
+        {{form}}
+
+    <input class="submit-btn" type="submit">    
+   
+</form>
+
+</div>
+
+
+<div class="footer">
+    We build <b>Financial Reports</b> using AI models with our expert accountants.<br><br>
+     <b>Contact us</b> on 0976035766 or <b>Email us</b> on collateai@gmail.com to know more about us.<br><br>
+    We are Located In Livingstone Town.<br><br>
+    <b>&copy;2022</b> 
+</div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body {
+    background: lightgray;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+    }
+    code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.main {
+    width: 100%;
+}
+.upper-main {
+     width:100%;
+}
+.lower-main {
+    width:100%;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: whitesmoke;
+}
+.navbar-head {
+    color:aqua;
+}
+.navbar-left {
+    width: 30%;
+}
+.navbar-right {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.cover-intro {
+    width: 100%;
+    margin: 20px 0;
+}
+.intro {
+    padding: 15px 20px 5px;
+}
+.intro-more {
+    padding: 5px 20px;
+}
+.contact {
+    width: 100%;
+    text-align: right;
+    padding: 15px 20px 5px;
+}
+.contact h5 {color:blue;}
+
+.header {
+    text-align: left;
+    margin: 20px auto;
+}
+.header h1 {
+    text-align: center;
+    padding-bottom: 30px;
+    /* color:blue; */
+}
+
+.header h2 {padding-bottom:15px;}
+.sub-header {
+    width:100%;
+    background-color: whitesmoke;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 5px solid black;
+    text-align: left;
+}
+.main-cover {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-list {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    background-color: whitesmoke;
+    margin:15px 5%;
+    padding:10px 20px;
+    border-left: 5px solid blue;
+}
+.main-list-line {
+    padding: 5px 0px;
+    border-bottom: 0.3px solid lightgray;
+}
+.main-pic-cover {
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    margin:15px 5%;
+    padding:10px 20px;
+
+}
+.main-pic-cover h5 {
+    padding: 5px 10px;
+    color: blue;
+}
+.img-highlight {
+    width: 100%;
+    height: 200px;
+}
+.main-list-sub {
+    width:90%;
+    background-color: whitesmoke;
+    margin:15px;
+    padding:10px 300px 10px 20px;
+}
+
+.service-header {
+    padding: 30px 20px 0px;
+}
+.main-list-inner {
+    width: 100%;
+}
+.main-list li {
+    padding: 5px 0;
+}
+.main-list h4 {
+    color: blue;
+    padding-left: 10px;
+}
+
+
+.sub-footer,.bottom-footer {
+    padding:10px 5px;
+}
+
+.img-cover {
+    width:100%;
+    height: 250px;
+    margin:15px 0px;
+}
+.img-home {
+    width:100%;
+    height: 100%;
+    padding:10px 0px;
+}
+.seperation-line {
+    padding: 20px 0px;
+    width: 100%;
+    border-bottom: 0.3px solid gray;
+
+}
+
+.message-section {
+    width: 90%;
+    margin: 30px 5%;
+}
+.message-section h3 {
+    padding: 20px 10px;
+}
+.home-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px 5%;
+    padding: 30px 10px;
+}
+
+.footer {
+    padding: 20px;
+    margin: 30px 0px 10px;
+    font-size: 12px;
+    border-top: 0.3px solid gray;
+}
+.footer li {
+    padding: 20px 0px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+
+    .main {
+    
+    width: 100%;
+    }
+
+    .lower-main {
+        width:70%;
+        margin: 0px 15%;
+    }
+    .upper-main {
+        width:70%;
+        margin: 0px 15%;
+    }
+    .main-cover {
+        width: 100%;
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .main-container {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+
+    .main-list {
+        /* flex-direction: row;
+        justify-content: space-between; */
+        width:45%;
+        background-color: whitesmoke;
+        margin:15px 0px;
+        padding:10px 20px;
+    }
+    .main-pic-cover {
+        width:45%;
+        margin:15px 0px;
+        padding:10px 20px;
+
+    }
+
+    .message-section {
+        width: 70%;
+        margin: 30px 15%;
+    }
+    .home-form {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        width: 40%;
+        padding: 30px 10px;
+    }
+
+    }
+    
