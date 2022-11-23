@@ -8,7 +8,7 @@ from .models import My_business, My_updates, Updates
 # Create your views here.
 
 
-def home(request):
+def index(request):
 
     form = MessageForm()
 

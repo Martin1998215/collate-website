@@ -14,10 +14,10 @@
 
         <ul class="navbar">
             <div class="navbar-left">
-                <li><h3>COLLATE AI</h3></li>
+                <li><h4>COLLATE AI</h4></li>
                 </div>
                 <div class="navbar-right">
-                <li><a href="{% url 'home' %}">HOME</a></li>
+                <li><a href="{% url 'index' %}">HOME</a></li>
                 <li><a href="{% url 'updates' %}">UPDATES</a></li>
                 <li><a href="{% url 'customers' %}">CUSTOMERS</a></li>
                 <li><a href="{% url 'about' %}">ABOUT</a></li>
@@ -27,10 +27,10 @@
     <div class="upper-main">
 
     <div class="header">
-    <h3>Welcome to our official website.</h3>
+    <h5 class="header-text">Welcome to our official website.</h5>
     <div class="seperation-line"></div>
     <div class="cover-intro">
-    <h4>A Data driven AI Startup for Business Management and Decision Making.</h4>
+    <h5>A Data driven AI Startup for Business Management and Decision Making.</h5>
     <div class="intro">Collate AI is an AI Startup, That uses AI for Business 
         Management and Decision Making From Sales Data To Generate Financial Reports, 
         co-founded by <b>Martin Sichibeya</b> and <b>Allan Mapumba</b>, An expert Accountant with 
@@ -49,10 +49,10 @@
 
         <div class="lower-main-cover">
             <div class="sub-header">
-            <h4>AI For Business Analysis And Management</h4>
+            <h5>AI For Business Analysis And Management</h5>
             </div>
             <div class="seperation-line"></div>
-            <h3 class="service-header">Profile</h3>
+            <h4 class="service-header">Image Cover</h4>
 
             <div class="img-cover">
                 {% load static %}
@@ -60,7 +60,7 @@
                  class="img-home" alt="Home Cover Photo">
             </div>
             <div class="seperation-line"></div>
-            <h3 class="service-header">Our Services</h3>
+            <h4 class="service-header">Our Services</h4>
             <div class="main-cover">
 
             <div class="main-list">
@@ -107,7 +107,7 @@
             </div>
             <div class="seperation-line"></div>
 
-            <h3 class="service-header">Highlights</h3>
+            <h4 class="service-header">Highlights</h4>
             <div class="main-container">
 
                 <div class="main-pic-cover">
@@ -136,9 +136,54 @@
                 </div>
             </div>
             <div class="seperation-line"></div>
+            <h4 class="service-header">Our Team</h4>
+
+            <div class="profile">
+                <div class="pro-cover">
+                    <div class="profile-person">
+                        <div class="pro-img">
+                            {% load static %}
+                            <img src="{% static 'media/martinez.jpg' %}"
+                             class="img-pro" alt="Home Cover Photo">
+                        </div>
+                        <div class="pro-text">
+                            <ul>
+                                <li><h4>Martin Sichibeya</h4></li>
+                                <li>Programmer</li>
+                                <div id="text-main">
+                                    <div id="text-line"></div>
+                                <li id="text-desc">Works On Software Development @CollateAI</li>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="profile-person">
+                        <div class="pro-img">
+                            {% load static %}
+                            <img src="{% static 'media\allan.jpg' %}"
+                             class="img-pro" alt="Home Cover Photo">
+                        </div>
+                        <div class="pro-text">
+                            <ul>
+                                <li><h4>Allan Mapumba</h4></li>
+                                <li>Professional Accountant</li>
+                                <div id="text-main">
+                                    <div id="text-line"></div>
+                                <li id="text-desc">Works On Business Management @CollateAI</li>
+                                </div>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="seperation-line"></div>
+            <h4 class="service-header">Message Us</h4>
 
             <div class="message-section">            
-<h3>Message Us</h3>
     <form action="", method="post", class="home-form">
         {% csrf_token %}
 

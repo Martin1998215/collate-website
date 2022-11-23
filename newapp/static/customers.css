@@ -53,37 +53,32 @@ a:active { text-decoration: none; }
     position: sticky;
     top: 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    padding: 15px 30px;
+    padding: 10px;
     background-color: whitesmoke;
 }
 
-.navbar-head {
-    color:aqua;
-}
-
 .navbar-left {
-    width: 30%;
+    width: 100%;
+    padding: 10px 0px;
 }
 .navbar-right {
-    width: 40%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
+
 .main-ul {
-    /* background-color: whitesmoke;
-    width:100%;
-    padding:15px;
-    margin: 30px 0px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 90%;
     margin: 20px 5%;
-    border-top: 5px solid blue;
     background-color: whitesmoke;
+    border-radius: 15px;
 
 }
 #business-type {
@@ -113,7 +108,7 @@ a:active { text-decoration: none; }
     flex-direction: column;
     width: 90%;
     margin: 20px 5%;
-    border-top: 5px solid blue;
+    /* border-top: 5px solid blue; */
 }
 
 .footer {
@@ -134,6 +129,20 @@ a:active { text-decoration: none; }
         width: 70%;
         margin: 20px 15%;
     }
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    .navbar-left {
+        width: 30%;
+        padding: 0px;
+    }
+    .navbar-right {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
     .header {
         width: 70%;
         margin: 20px 15%;
@@ -150,7 +159,7 @@ a:active { text-decoration: none; }
         padding: 10px;
         width: 45%;
         margin: 20px;
-        border-top: 5px solid blue;
+        /* border-top: 5px solid blue; */
     }
     .footer {
         width: 70%;
